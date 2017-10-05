@@ -22,13 +22,12 @@ public class CashAccount extends BankImpl {
 	 * @see org.escoladeltreball.secondassignment.BankImpl#withdraw(double)
 	 */
 	@Override
-	public void withdraw(double euros) throws Exception {
-		// TODO Auto-generated method stub
-		if (!isBalanceNegative()) {
-			if (euros > 0) {
-				this.balance = this.balance - euros;
-			}
-		}
-	}
+	 public void withdraw(double euros) throws Exception {
+        if (euros > 0) {
+            if (this.balance > euros) {
+                this.balance = this.balance - euros;
+            }
+        }
+    }
 
 }

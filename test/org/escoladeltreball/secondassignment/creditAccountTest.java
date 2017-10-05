@@ -57,6 +57,10 @@ public class creditAccountTest {
 		try {
 			bank.withdraw(250);
 			assertEquals(2250, bank.getBalance(), 1e-4);
+			bank.withdraw(2550);
+			assertEquals(-300, bank.getBalance(), 1e-4);
+			bank.withdraw(1);
+			assertEquals(-300, bank.getBalance(), 1e-4);
 		}		
 		catch (Exception e) {
 			e.printStackTrace();
@@ -68,7 +72,8 @@ public class creditAccountTest {
 	 */
 	@Test
 	public void testDeposit() {
-		
+		bank.deposit(250);
+		assertEquals(2750, bank.getBalance(), 1e-4);
 	}
 
 	/**
@@ -76,7 +81,7 @@ public class creditAccountTest {
 	 */
 	@Test
 	public void testToDollars() {
-		fail("Not yet implemented");
+		assertEquals(3500,bank.toDollars(), 1e-4);
 	}
 
 	/**
@@ -84,7 +89,7 @@ public class creditAccountTest {
 	 */
 	@Test
 	public void testGetBalance() {
-		fail("Not yet implemented");
+		assertEquals(2500, bank.getBalance(), 1e-4);
 	}
 
 	/**
@@ -92,7 +97,7 @@ public class creditAccountTest {
 	 */
 	@Test
 	public void testIsBalanceNegative() {
-		fail("Not yet implemented");
+		assertFalse(bank.isBalanceNegative());
 	}
 
 }

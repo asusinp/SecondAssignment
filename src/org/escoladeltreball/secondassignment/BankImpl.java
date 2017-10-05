@@ -60,9 +60,9 @@ public abstract class BankImpl implements Bank {
 	 * @see org.escoladeltreball.secondassignment.Bank#isBalanceNegative()
 	 */
 	@Override
-	public boolean isBalanceNegative() {
-		// TODO Auto-generated method stub
-		return this.balance < 0;
-	}
+		public boolean isBalanceNegative() {
+			// TODO Auto-generated method stub
+			return this.balance < 0;
+		}
 
 }
