@@ -24,7 +24,11 @@ public class CashAccount extends BankImpl {
 	@Override
 	public void withdraw(double euros) throws Exception {
 		// TODO Auto-generated method stub
-
+		if (!isBalanceNegative()) {
+			if (euros > 0) {
+				this.balance = this.balance - euros;
+			}
+		}
 	}
 
 }

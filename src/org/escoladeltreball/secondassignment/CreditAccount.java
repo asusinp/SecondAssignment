@@ -25,8 +25,8 @@ public class CreditAccount extends BankImpl {
 	public void withdraw(double euros) throws Exception {
 		// TODO Auto-generated method stub
 		if (euros > 0) {
-			if (this.balance - euros >= this.MIN_BALANCE) {
-				balance = balance - euros;
+			if (this.balance - euros >= Bank.MIN_BALANCE) {
+				this.balance = this.balance - euros;
 			}
 		}
 	}
