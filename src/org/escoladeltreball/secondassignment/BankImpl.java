@@ -7,7 +7,7 @@ package org.escoladeltreball.secondassignment;
  * @author alex
  *
  */
-public class BankImpl implements Bank {
+public abstract class BankImpl implements Bank {
 	
 	protected String owner;
 	protected double balance;
@@ -25,10 +25,7 @@ public class BankImpl implements Bank {
 	 * @see org.escoladeltreball.secondassignment.Bank#withdraw(double)
 	 */
 	@Override
-	public void withdraw(double euros) throws Exception {
-		// TODO Auto-generated method stub
-
-	}
+	public abstract void withdraw(double euros) throws Exception;
 
 	/* (non-Javadoc)
 	 * @see org.escoladeltreball.secondassignment.Bank#deposit(double)
