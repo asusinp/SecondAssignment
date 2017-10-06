@@ -57,8 +57,8 @@ public class cashAccountTest {
 		try {
 			bank.withdraw(250);
 			assertEquals(2250, bank.getBalance(), 1e-4);
-			bank.withdraw(-2555550);
-			assertEquals(2250, bank.getBalance(), 1e-4);	
+			bank.withdraw(2500);
+			assertEquals(2250, bank.getBalance(), 1e-4);
 		}		
 		catch (Exception e) {
 			e.printStackTrace();
