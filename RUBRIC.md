@@ -11,3 +11,14 @@ Standards | Program is stylistically well designed (i.e. meaningful identifiers 
 Documentation | Program is well documented | Missing one required comment | Missing two or more required comments | Most or all documentation is missing | 0
 Modularity | Program is decomposed into coherent and reusable units, and unnecessary repetition has been eliminated | Program is decomposed into coherent units, but may still contain some unnecessary repetition | Program is decomposed into units of appropriate size, but they lack coherence or reusability. Program contains unnecessary repetition | Program is one big function or is decomposed in ways that make little sense | 0
 Date delivery completion | Program is completed on time | Program is one day late | Program is two days late | Program is more than two days late | 0
+
+SELF EVALUATION
+Program execution 3
+Correct output 3	
+OOP Design 	2
+Standards 3
+Documentation 2
+Modularity 3
+Date delivery completion 3
+
+TOTAL: 19/21
