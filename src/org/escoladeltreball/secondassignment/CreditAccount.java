@@ -27,6 +27,8 @@ public class CreditAccount extends BankImpl {
 		if (euros > 0) {
 			if (this.balance - euros >= Bank.MIN_BALANCE) {
 				this.balance = this.balance - euros;
+			} else {
+				throw new Exception("Saldo insuficiente");
 			}
 		}
 	}

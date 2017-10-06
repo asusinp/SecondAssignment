@@ -26,6 +26,8 @@ public class CashAccount extends BankImpl {
         if (euros > 0) {
             if (this.balance > euros) {
                 this.balance = this.balance - euros;
+            } else {
+            	throw new Exception("Saldo insuficiente");
             }
         }
     }
